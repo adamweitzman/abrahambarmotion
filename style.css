@@ -1,0 +1,160 @@
+html, body {
+    margin:0;
+}
+
+.bgContainer {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    display:flex;
+}
+
+.tlv {
+    position:relative;
+    width:50%;
+    height:100vh;
+    background-image: url('images/optlev.jpg');
+    background-position: center left;
+    background-size: cover;
+    margin:0;
+    z-index:-2;
+}
+
+.jlm {
+    position:relative;
+    width:50%;
+    height:100vh;
+    background-image: url('images/lee.jpeg');
+    background-position: center left;
+    background-size: cover;
+    margin:0;
+    z-index:-2;
+}
+
+.overlay {
+    width:100%;
+    height:100%;
+    background: black;
+    opacity:0.6;
+    position:absolute;
+    z-index:-1;
+    transition: all 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.tlvText {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+}
+
+.tlvTitle {
+    font-family: "American Typewriter";
+    font-size: 60px;
+    color:white;
+    margin-bottom: 10px;
+    transition: all 1.5s cubic-bezier(.55,.2,.07,.93);
+
+}
+
+.jlmTitle {
+    font-family: "American Typewriter";
+    font-size: 60px;
+    color:white;
+    margin-bottom: 10px;
+    transition: all 1.5s cubic-bezier(.55,.2,.07,.93);
+
+}
+
+.smallCity {
+    font-size:30px;
+}
+
+.tlv:hover .overlay {
+    opacity:0.6;
+}
+
+.jlm:hover .overlay {
+    opacity:0.6;
+}
+
+.tlv, .jlm {
+    cursor: pointer;
+
+}
+
+.verLine {
+    height:1px;
+    background: white;
+    width:30%;
+    /*margin-top: -10px;*/
+    transition: all 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.verLineShort {
+    width:10%;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size:20px;
+    color:white;
+}
+
+.eventsSection {
+    display:flex;
+    justify-content: space-between;
+}
+
+.event {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.eventImg {
+    overflow: hidden;
+    height:0px;
+    transition: all 1.5s cubic-bezier(.55,.2,.07,.93);
+
+}
+
+.eventImgJlm {
+    overflow: hidden;
+    height:0px;
+    transition: all 1.5s cubic-bezier(.55,.2,.07,.93);
+}
+
+.openImg {
+    height:150px;
+}
+
+/*.eventImg:hover {*/
+    /*height:200px;*/
+/*}*/
+
+.imgHere {
+    width:150px;
+    height:150px;
+    /*background: deepskyblue;*/
+    background-image: url('images/baby.png');
+    background-size: contain;
+}
+
+
+
+h3 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size:18px;
+    color:white;
+}
+
+.light {
+    font-weight: 100;
+    margin-top: -15px;
+}
